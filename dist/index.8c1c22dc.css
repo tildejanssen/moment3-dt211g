@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #dbdbdb;
+  background-color: #f2f5ea;
 }
 
 header {
@@ -29,6 +29,10 @@ footer ul li {
 
 .bar {
   background-color: #fff;
+}
+
+.main-container {
+  background-color: #f2f5ea;
 }
 
 nav {
@@ -102,7 +106,7 @@ footer ul li {
     transition: all .3s;
     position: fixed;
     top: 5rem;
-    left: -100%;
+    left: -1000%;
     box-shadow: 0 10px 10px #00000080;
   }
 
@@ -152,7 +156,6 @@ footer ul li {
 }
 
 .main-container {
-  background-color: #fff;
   grid-template-columns: repeat(4, 1fr);
   align-items: start;
   display: grid;

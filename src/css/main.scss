@@ -73,7 +73,7 @@ footer{
     /*Omvandlas till hamburger meny vid max width 1024px */
     .nav-menu {
       position: fixed;
-      left: -100%;
+      left: -1000%;
       top: 5rem;
       z-index: 1000;
       /* så menyn visas över innehållet*/
@@ -142,7 +142,6 @@ footer{
     display: grid; 
     grid-template-columns: repeat(4, 1fr); 
     align-items: start; 
-    background-color: white;
   }
 
   .container1{

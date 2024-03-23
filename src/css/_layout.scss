@@ -8,6 +8,8 @@ body{
     background-color: base.$primary-bg;
 }
 
+
+
 header{
     background-color: base.$primary-green;
     padding:0.5rem;
@@ -51,4 +53,8 @@ footer{
   
 .bar {
     background-color: base.$white;
+}
+
+.main-container{
+    background-color:base.$primary-bg;
 }
