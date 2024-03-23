@@ -1,0 +1,143 @@
+@use 'layout';
+@use 'base';
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 2rem;
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 120px;
+        list-style: none;
+        
+
+        li{
+            margin:0 1rem;
+
+            a{
+                text-decoration: none;
+                padding:0.5rem 0.7rem;
+                border-radius: 3px;
+                transition: all 0.5s ease-in-out;
+                font-size: 1.2em;
+            }
+
+        }
+    }
+}
+
+
+.logo{
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+    padding:0.5rem 0.7rem;
+    font-size: 1.2em;
+}
+
+
+footer{
+    text-align: center;
+    padding:1px;
+
+    ul{
+        list-style: none;
+
+        li{
+            margin:0 1rem;
+        }
+    }
+}
+
+.hamburger {
+    /*hamburger menyn visas inte */
+    display: none;
+  }
+
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 3px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+
+  @media only screen and (max-width: 1024px) {
+    /*Omvandlas till hamburger meny vid max width 1024px */
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      z-index: 1000;
+      /* så menyn visas över innehållet*/
+      flex-direction: column;
+      background-color: base.$primary-green;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 10px 10px base.$primary-shadow;
+    }
+  
+    .nav-menu.active {
+      left: 0;
+      background-color: base.$primary-green;
+      position: absolute;
+      
+    }
+  
+    .nav-item {
+      margin: 1.5rem 0;
+      /*mellanrum */
+    }
+  
+    .nav-link {
+      color:base.$white;
+      /*färg på menyknapparna */
+    }
+  
+    .hamburger {
+      display: block;
+      cursor: pointer;
+      /*ändrar muspekaren*/
+    }
+  
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .goHome {
+      color: base.$white;
+      text-decoration: none;
+      padding: 14px 16px;
+      font-weight: bold;
+      font-size: larger;
+    }
+  
+    .hamburger.active .bar:nth-child(1) {
+     transform: translate(0px,2px) rotate(45deg);
+    
+  
+      /*specifikationer när man trycker på menyn */
+    }
+  
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+
+  .nav-link.current {
+    padding: 10px;
+    text-decoration: underline;
+  }
+  
+  
+
+

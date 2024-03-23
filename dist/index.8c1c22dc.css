@@ -1,2 +1,153 @@
+* {
+  font-family: open sans, verdana, sans-serif;
+}
 
+body {
+  background-color: #dbdbdb;
+}
+
+header {
+  background-color: #6b986b;
+  padding: .5rem;
+}
+
+footer {
+  background-color: #6b986b;
+}
+
+ul li a, .logo {
+  color: #fff;
+}
+
+ul li a:hover {
+  background-color: #83b983;
+}
+
+footer ul li {
+  color: #fff;
+}
+
+.bar {
+  background-color: #fff;
+}
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  display: flex;
+}
+
+nav ul {
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 120px;
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  border-radius: 3px;
+  padding: .5rem .7rem;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: all .5s ease-in-out;
+}
+
+.logo {
+  align-items: center;
+  padding: .5rem .7rem;
+  font-size: 1.2em;
+  text-decoration: none;
+  display: flex;
+}
+
+footer {
+  text-align: center;
+  padding: 1px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin: 0 1rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  height: 2px;
+  margin: 3px auto;
+  transition: all .3s ease-in-out;
+  display: block;
+}
+
+@media only screen and (width <= 1024px) {
+  .nav-menu {
+    z-index: 1000;
+    text-align: center;
+    background-color: #6b986b;
+    border-radius: 10px;
+    flex-direction: column;
+    width: 100%;
+    transition: all .3s;
+    position: fixed;
+    top: 5rem;
+    left: -100%;
+    box-shadow: 0 10px 10px #00000080;
+  }
+
+  .nav-menu.active {
+    background-color: #6b986b;
+    position: absolute;
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 1.5rem 0;
+  }
+
+  .nav-link {
+    color: #fff;
+  }
+
+  .hamburger {
+    cursor: pointer;
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .goHome {
+    color: #fff;
+    padding: 14px 16px;
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .hamburger.active .bar:first-child {
+    transform: translate(0, 2px)rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px)rotate(-45deg);
+  }
+}
+
+.nav-link.current {
+  padding: 10px;
+  text-decoration: underline;
+}
 /*# sourceMappingURL=index.8c1c22dc.css.map */

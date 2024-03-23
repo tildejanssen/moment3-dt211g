@@ -1,0 +1,54 @@
+@use 'base';
+
+* {
+    font-family: base.$primary-fonts;
+}
+
+body{
+    background-color: base.$primary-bg;
+}
+
+header{
+    background-color: base.$primary-green;
+    padding:0.5rem;
+}
+
+footer{
+    background-color: base.$primary-green;
+}
+
+ul{
+    li{
+        a{
+            color:base.$white;
+        }
+    }
+}
+
+.logo{
+    color:base.$white;
+}
+
+ul{
+    
+    li{
+
+        a:hover{
+            background-color:base.$light-green;
+        }
+            
+    }
+}
+
+
+footer{
+    ul{
+        li{
+            color:base.$white;
+        }
+    }
+}
+  
+.bar {
+    background-color: base.$white;
+}
