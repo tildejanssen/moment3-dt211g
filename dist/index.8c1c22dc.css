@@ -204,4 +204,24 @@ footer ul li {
   border: .1px solid #405d40;
   box-shadow: 10px 10px 10px #0003;
 }
+
+@media (prefers-color-scheme: dark) {
+  body, .main-container {
+    background-color: #c7d4a5;
+  }
+
+  .container1 {
+    border-left: 2px solid #a7c2a7;
+    border-right: 2px solid #a7c2a7;
+  }
+
+  .img-line {
+    border: .1px solid #a7c2a7;
+    box-shadow: 10px 10px 10px #ffffffba;
+  }
+
+  h1, h1 i {
+    color: #fff;
+  }
+}
 /*# sourceMappingURL=index.8c1c22dc.css.map */
