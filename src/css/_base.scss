@@ -10,11 +10,18 @@ $black:black;
 $white:white;
 
 //dark theme colours
-$primary-bg-darkm:darken($primary-bg, 20%);
-$dark-green-darkm:lighten($primary-green, 20%);
+$primary-bg-darkm:darken($primary-bg, 40%);
+$dark-green-darkm:lighten($primary-green, 30%);
 $primary-shadow-darkm:rgba(255, 255, 255, 0.776);
 $secondary-shadow-darkm:rgba(255, 255, 255, 0.731);
 $black-darkm:white;
 
 
 $primary-fonts:"open sans", verdana, sans-serif;
+
+//mixins
+@mixin headline-text {
+    color: $dark-green;
+    font-size: 35px;
+    font-weight: bold;
+  }

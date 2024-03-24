@@ -192,7 +192,17 @@ footer{
     box-shadow: 10px 10px 10px base.$secondary-shadow;
     background-color: base.$lighter-green;
   }
+
+  h1{
+    @include base.headline-text;
+
+    i{
+        @include base.headline-text;  
+    }
+  }
   
+
+
   @media (prefers-color-scheme: dark){
     body{
         background-color: base.$primary-bg-darkm;

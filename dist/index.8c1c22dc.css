@@ -205,18 +205,24 @@ footer ul li {
   box-shadow: 10px 10px 10px #0003;
 }
 
+h1, h1 i {
+  color: #405d40;
+  font-size: 35px;
+  font-weight: bold;
+}
+
 @media (prefers-color-scheme: dark) {
   body, .main-container {
-    background-color: #c7d4a5;
+    background-color: #9cb360;
   }
 
   .container1 {
-    border-left: 2px solid #a7c2a7;
-    border-right: 2px solid #a7c2a7;
+    border-left: 2px solid #c5d7c5;
+    border-right: 2px solid #c5d7c5;
   }
 
   .img-line {
-    border: .1px solid #a7c2a7;
+    border: .1px solid #c5d7c5;
     box-shadow: 10px 10px 10px #ffffffba;
   }
 
