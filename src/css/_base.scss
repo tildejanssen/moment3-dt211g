@@ -1,12 +1,19 @@
+//colours
 $primary-bg:#f2f5ea;
 $primary-green:rgb(107, 152, 107);
 $light-green:rgb(131, 185, 131);
 $lighter-green:lighten($primary-green, 25%);
 $dark-green:darken($primary-green, 20%);
 $primary-shadow: rgb(0, 0, 0, 0.5);
+$secondary-shadow:rgba(0, 0, 0, 0.201);
 $black:black;
 $white:white;
 
+//dark theme colours
+$primary-bg-darkm:darken($primary-bg, 20%);
+$dark-green-darkm:lighten($primary-green, 20%);
+$primary-shadow-darkm:rgba(255, 255, 255, 0.776);
+$black-darkm:white;
 
 
-$primary-fonts: "open sans", verdana, sans-serif;
+$primary-fonts:"open sans", verdana, sans-serif;

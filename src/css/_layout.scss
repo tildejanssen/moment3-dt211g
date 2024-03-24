@@ -58,3 +58,11 @@ footer{
 .main-container{
     background-color:base.$primary-bg;
 }
+
+h1{
+    color:base.$black;
+
+    i{
+        color:base.$black;
+    }
+}

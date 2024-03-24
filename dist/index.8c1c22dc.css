@@ -35,6 +35,10 @@ footer ul li {
   background-color: #f2f5ea;
 }
 
+h1, h1 i {
+  color: #000;
+}
+
 nav {
   justify-content: space-between;
   align-items: center;
