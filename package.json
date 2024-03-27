@@ -6,7 +6,7 @@
   "license": "ISC",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel --port 3000",
+    "start": "parcel",
     "build": "parcel build"
   },
   "devDependencies": {

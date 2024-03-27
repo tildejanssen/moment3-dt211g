@@ -1,0 +1,2 @@
+const e=document.querySelector(".hamburger"),t=document.querySelector(".nav-menu"),c=document.querySelectorAll(".nav-link");function n(){e.classList.remove("active"),t.classList.remove("active")}e.addEventListener("click",function(){e.classList.toggle("active"),t.classList.toggle("active")}),c.forEach(e=>e.addEventListener("click",n)),window.location.href,document.querySelectorAll(".nav-link");
+//# sourceMappingURL=index.aa77fe44.js.map
