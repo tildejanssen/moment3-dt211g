@@ -214,8 +214,9 @@ footer{
     width:50%;
   }
 
+//media queries
 
-  @media (prefers-color-scheme: dark){
+@media (prefers-color-scheme: dark){
     body{
         background-color: base.$primary-bg-darkm;
     }
@@ -241,5 +242,31 @@ footer{
         color:base.$black-darkm;
     }
   }
+
+  $screen-size: 1200px;
+
+@if $screen-size >= 1200px {
+  p {
+    font-size: 17px;
+  }
+} @else if $screen-size >= 768px {
+  p {
+    font-size: 15px;
+  }
+} @else {
+  p {
+    font-size: 13px;
+  }
+}
+
+
+@media only screen and (max-width: 1600px) {} /*Reglerna för max-width 1600px vilket inte ändras*/
+
+@media only screen and (max-width: 1024px) { /*Reglerna för max-width 1024px*/
+
+}
+
+
+
 
 
