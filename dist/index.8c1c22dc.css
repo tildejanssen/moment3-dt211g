@@ -106,7 +106,7 @@ footer ul li {
     background-color: #6b986b;
     border-radius: 10px;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     transition: all .3s;
     position: fixed;
     top: 5rem;
@@ -245,5 +245,42 @@ h1, h1 i {
 
 p {
   font-size: 17px;
+}
+
+@media only screen and (width <= 1024px) {
+  .img-line img {
+    width: 280px;
+    height: 180px;
+    margin: 0;
+  }
+
+  .container2 {
+    width: 60%;
+  }
+}
+
+@media only screen and (width <= 600px) {
+  .images-container {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+  }
+
+  .img-line img {
+    width: 300px;
+    height: 200px;
+    margin: 0;
+  }
+
+  .container1, .container2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .container2 {
+    width: 70%;
+  }
+
+  p {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=index.8c1c22dc.css.map */

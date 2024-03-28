@@ -79,7 +79,7 @@ footer{
       /* så menyn visas över innehållet*/
       flex-direction: column;
       background-color: base.$primary-green;
-      width: 100%;
+      width: 90%;
       border-radius: 10px;
       text-align: center;
       transition: 0.3s;
@@ -172,7 +172,6 @@ footer{
     grid-gap:50px; 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 0px;
     margin-bottom: 50px;
   }
 
@@ -263,10 +262,46 @@ footer{
 @media only screen and (max-width: 1600px) {} /*Reglerna för max-width 1600px vilket inte ändras*/
 
 @media only screen and (max-width: 1024px) { /*Reglerna för max-width 1024px*/
+    .img-line{
+
+        img {
+        height: 180px;;
+        width:280px;
+        margin:0;
+        }
+    
+      }
+      .container2{
+        width:60%;
+      }
 
 }
 
+@media only screen and (max-width: 600px) { /*Reglerna för max-width 600px*/
 
+  .images-container{
+    grid-template-columns: repeat(1, 1fr);
+    margin:0;
+    
+  }
+  .img-line{
 
+    img {
+    height: 200px;;
+    width:300px;
+    margin:0;
+    }
 
+  }
+  .container1{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container2{
+    width:70%;
+  }
+  p{
+    font-size: 15px;
+  }
+
+}
 
