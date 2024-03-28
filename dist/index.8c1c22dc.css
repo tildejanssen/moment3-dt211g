@@ -262,12 +262,12 @@ p {
 @media only screen and (width <= 600px) {
   .images-container {
     grid-template-columns: repeat(1, 1fr);
-    margin: 0;
+    margin-top: 40px;
   }
 
   .img-line img {
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
     margin: 0;
   }
 
@@ -281,6 +281,22 @@ p {
 
   p {
     font-size: 15px;
+  }
+
+  .container1, .container2 {
+    grid-area: 0;
+    grid-gap: 0px;
+    box-shadow: none;
+    border-left: 0;
+    border-right: 0;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 30px auto 0;
+    padding: 0;
+    display: grid;
+  }
+
+  .title1 {
+    font-size: 27px;
   }
 }
 /*# sourceMappingURL=index.8c1c22dc.css.map */
