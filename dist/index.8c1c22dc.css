@@ -326,6 +326,7 @@ p {
 .pic-animation:hover {
   cursor: pointer;
   width: 550px;
+  transform: rotate(360deg);
 }
 
 #overlay:hover {
@@ -337,5 +338,52 @@ p {
   letter-spacing: 1px;
   grid-area: 1 / 1 / 1 / 5;
   margin: 15px auto 0;
+}
+
+.moving-animation {
+  background-color: #ac02d2;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px;
+  animation-name: circle;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 4;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+@keyframes circle {
+  0% {
+    background-color: #ac02d2;
+    top: 0;
+    left: 0;
+  }
+
+  25% {
+    background-color: #e08e00;
+    top: 0;
+    left: 200px;
+  }
+
+  50% {
+    background-color: #0073ff;
+    top: 0;
+    left: 400px;
+  }
+
+  75% {
+    background-color: #6b986b;
+    top: 0;
+    left: 200px;
+  }
+
+  100% {
+    background-color: #ff00b7;
+    top: 0;
+    left: 0;
+  }
 }
 /*# sourceMappingURL=index.8c1c22dc.css.map */
