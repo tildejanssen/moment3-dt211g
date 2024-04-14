@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: #6b986b;
+  background: linear-gradient(#405d40, #6b986b, #83b983);
   padding: .5rem;
 }
 
@@ -106,7 +106,7 @@ footer ul li {
     background-color: #6b986b;
     border-radius: 10px;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     transition: all .3s;
     position: fixed;
     top: 5rem;
@@ -245,5 +245,97 @@ h1, h1 i {
 
 p {
   font-size: 17px;
+}
+
+@media only screen and (width <= 1024px) {
+  .img-line img {
+    width: 280px;
+    height: 180px;
+    margin: 0;
+  }
+
+  .container2 {
+    width: 60%;
+  }
+}
+
+@media only screen and (width <= 600px) {
+  .images-container {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 40px;
+  }
+
+  .img-line img {
+    width: 350px;
+    height: 250px;
+    margin: 0;
+  }
+
+  .container1, .container2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .container2 {
+    width: 70%;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .container1, .container2 {
+    grid-area: 0;
+    grid-gap: 0px;
+    box-shadow: none;
+    border-left: 0;
+    border-right: 0;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 30px auto 0;
+    padding: 0;
+    display: grid;
+  }
+
+  .title1 {
+    font-size: 27px;
+  }
+}
+
+.pic-animation {
+  width: 500px;
+  margin: 5% auto;
+  transition: all .6s;
+  position: relative;
+}
+
+#pic-sunset {
+  width: 100%;
+  height: auto;
+}
+
+#overlay {
+  opacity: 0;
+  background-color: #d4b5d4;
+  width: 100%;
+  height: 100%;
+  transition: all .6s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pic-animation:hover {
+  cursor: pointer;
+  width: 550px;
+}
+
+#overlay:hover {
+  opacity: .6;
+}
+
+.title2 {
+  text-align: center;
+  letter-spacing: 1px;
+  grid-area: 1 / 1 / 1 / 5;
+  margin: 15px auto 0;
 }
 /*# sourceMappingURL=index.8c1c22dc.css.map */

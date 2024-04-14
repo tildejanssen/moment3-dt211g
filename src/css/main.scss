@@ -79,7 +79,7 @@ footer{
       /* så menyn visas över innehållet*/
       flex-direction: column;
       background-color: base.$primary-green;
-      width: 100%;
+      width: 90%;
       border-radius: 10px;
       text-align: center;
       transition: 0.3s;
@@ -172,7 +172,6 @@ footer{
     grid-gap:50px; 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 0px;
     margin-bottom: 50px;
   }
 
@@ -263,10 +262,105 @@ footer{
 @media only screen and (max-width: 1600px) {} /*Reglerna för max-width 1600px vilket inte ändras*/
 
 @media only screen and (max-width: 1024px) { /*Reglerna för max-width 1024px*/
+    .img-line{
+
+        img {
+        height: 180px;;
+        width:280px;
+        margin:0;
+        }
+    
+      }
+      .container2{
+        width:60%;
+      }
+
+}
+
+@media only screen and (max-width: 600px) { /*Reglerna för max-width 600px*/
+
+  .images-container{
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 40px;
+    
+  }
+  .img-line{
+
+    img {
+    height: 250px;
+    width:350px;
+    margin:0;
+    }
+
+  }
+  .container1{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container2{
+    width:70%;
+  }
+  p{
+    font-size: 15px;
+  }
+  .container1{
+    grid-area: 0;
+    margin:0 auto;
+    grid-gap:0px; 
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 30px;
+    margin-bottom: 0px;
+    border-left: 0;
+    border-right: 0;
+    padding:0px;
+    box-shadow: none;
+  }
+  .title1{
+    font-size: 27px;
+  }
 
 }
 
 
 
+//Moment 4
 
+.pic-animation{
+ width:500px;
+ position:relative;
+ margin: 5% auto;
+ transition: 0.6s ease;
+}
 
+#pic-sunset{
+  width:100%;
+  height: auto;
+}
+
+#overlay{
+  width:100%;
+  height: 100%;
+  background-color: rgb(212, 181, 212);
+  position: absolute;
+  top:0;
+  left:0;
+  opacity:0;
+  transition: 0.6s ease;
+}
+
+.pic-animation:hover{
+  width:550px;
+  cursor:pointer;
+}
+
+#overlay:hover{
+  opacity:0.6;
+}
+
+.title2 {
+  grid-area: 1 / 1 / 1 / 5; 
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  }
