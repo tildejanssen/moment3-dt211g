@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moment 3 DT211G</title>
     <script src="js/main.js" type="module"></script>
+    <script src="js/btn.js" type="module"></script>
     <link rel="stylesheet" href="css/main.scss">
     <script src="https://kit.fontawesome.com/b3587683ac.js" crossorigin="anonymous"></script>
     
@@ -15,7 +16,7 @@
 
         <nav class="navbar">
 
-          <a href="index.html" class="logo">Moment 3</a>
+          <a href="index.html" class="logo">DT211G</a>
 
           <ul class="nav-menu">
             <li class="nav-item">
@@ -61,10 +62,32 @@
           </div>
     </div>
 
+    <div class="pic-animation2">
+        <picture> 
+            <source srcset="bilder/polarbear.jpg?as=avif" type="image/avif">
+
+            <source srcset="bilder/polarbear.jpg?as=webp" type="image/webp">
+
+            <source srcset="bilder/polarbear.jpg" type="image/jpeg">
+          
+            <img id="pic-polarbear" src="bilder/polarbear.jpg" alt="Isbjörn">
+          </picture>
+
+          <div id="overlay2">
+        
+          </div>
+    </div>
+
     <h1 class="title2">Rörligt objekt <i class="fa-solid fa-arrow-down"></i></h1>
 
         <div class="moving-animation"></div>
 
+        <h1 class="title2">Klickbar knapp <i class="fa-solid fa-arrow-down"></i></h1>
+
+          <button id="btn">Klicka för att ändra färg!</button>
+
+
+   
 
 <footer class="footer">
     <div class="footer-text">
@@ -72,7 +95,7 @@
        <li>Laborationsuppgift för kursen DT211G, Moment 3 & 4, Frontend-baserad webbutveckling</li> 
        <li>&copy; Tilde Janssen, 2024</li>
     </ul>
-    </div>       
+    </div>     
 </footer>
 
   </body>

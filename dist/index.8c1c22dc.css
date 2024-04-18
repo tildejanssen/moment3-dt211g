@@ -300,14 +300,14 @@ p {
   }
 }
 
-.pic-animation {
+.pic-animation, .pic-animation2 {
   width: 500px;
   margin: 5% auto;
   transition: all .6s;
   position: relative;
 }
 
-#pic-sunset {
+#pic-sunset, #pic-polarbear {
   width: 100%;
   height: auto;
 }
@@ -323,13 +323,28 @@ p {
   left: 0;
 }
 
+#overlay2 {
+  opacity: 0;
+  background: linear-gradient(217deg, #f00c, #f000 70.71%), linear-gradient(127deg, #0f0c, #0f00 70.71%), linear-gradient(336deg, #00fc, #00f0 70.71%);
+  width: 100%;
+  height: 100%;
+  transition: all .6s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .pic-animation:hover {
   cursor: pointer;
   width: 550px;
+}
+
+.pic-animation2:hover {
+  cursor: pointer;
   transform: rotate(360deg);
 }
 
-#overlay:hover {
+#overlay:hover, #overlay2:hover {
   opacity: .6;
 }
 
@@ -337,7 +352,7 @@ p {
   text-align: center;
   letter-spacing: 1px;
   grid-area: 1 / 1 / 1 / 5;
-  margin: 15px auto 0;
+  margin: 25px auto 0;
 }
 
 .moving-animation {
@@ -385,5 +400,19 @@ p {
     top: 0;
     left: 0;
   }
+}
+
+#btn {
+  background-color: #83b983;
+  border: 2px solid #405d40;
+  border-radius: 5px;
+  margin: 1em auto 20px;
+  padding: 1em 2em;
+  font-size: 1.5rem;
+  display: block;
+}
+
+#btn:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=index.8c1c22dc.css.map */
