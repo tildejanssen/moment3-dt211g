@@ -415,4 +415,10 @@ p {
 #btn:hover {
   cursor: pointer;
 }
+
+#map {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto 20px;
+}
 /*# sourceMappingURL=index.8c1c22dc.css.map */
