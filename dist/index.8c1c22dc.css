@@ -421,4 +421,37 @@ p {
   height: 400px;
   margin: 0 auto 20px;
 }
+
+.chart-container1 {
+  width: 1000px;
+  height: 1000px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.chart-container2 {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto 20px;
+}
+
+#h2-title {
+  color: #405d40;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media only screen and (width <= 1024px) {
+  .chart-container1, .chart-container2 {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media only screen and (width <= 600px) {
+  .chart-container1, .chart-container2 {
+    width: auto;
+    height: auto;
+  }
+}
 /*# sourceMappingURL=index.8c1c22dc.css.map */

@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diagram DT211G</title>
     <script src="js/main.js" type="module"></script>
+    <script src="js/diagram.js" type="module"></script>
     <link rel="stylesheet" href="css/main.scss">
-    <script src="https://kit.fontawesome.com/b3587683ac.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
   </head>
   <body>
@@ -43,9 +44,17 @@
 
       </header>
 
+      <h1 class="title1">Diagram</h1>
 
-
-
+    <h2 id="h2-title">6 mest sökta kurserna:</h2>
+      <div class="chart-container1">
+      <canvas id="barChart" style="width: 300px; height:300px;" ></canvas>
+      </div>
+    <h2 id="h2-title">6 mest sökta programmen:</h2>
+      <div class="chart-container2">
+      <canvas id="pieChart" style="width: 300px; height: 300px;"></canvas>
+      </div>
+      
    
 
 <footer class="footer">

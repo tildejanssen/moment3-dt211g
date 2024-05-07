@@ -451,3 +451,50 @@ footer{
      margin: 0 auto;
      margin-bottom: 20px;
   }
+
+  .chart-container1 {
+    width: 1000px;
+    height: 1000px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+  .chart-container2{
+    width: 600px;
+    height: 600px;
+    margin:0 auto;
+    margin-bottom: 20px;
+  }
+
+  #h2-title{
+    color: base.$dark-green;
+    font-weight: bold;
+    text-align: center;
+  }
+
+@media only screen and (max-width: 1600px) {} /*Reglerna för max-width 1600px vilket inte ändras*/
+
+@media only screen and (max-width: 1024px) { /*Reglerna för max-width 1024px*/
+ .chart-container1{
+  width:auto;
+  height:auto;
+ }
+
+ .chart-container2{
+  width:auto;
+  height:auto;
+ }
+
+}
+
+@media only screen and (max-width: 600px) { /*Reglerna för max-width 600px*/
+  .chart-container1{
+    width:auto;
+    height:auto;
+   }
+
+   .chart-container2{
+    width:auto;
+    height:auto;
+   }
+}
